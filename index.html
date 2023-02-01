@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body class="body">
+    <!-- The main parent container -->
+    <div class="main__container">
+      <span class="loader"></span>
+      <!-- Logo Section -->
+      <div class="logo__section">
+        <a href="#">devfinder</a>
+        <div class="theme__changer">
+          <i class="fa-light fa-light-switch theme--switch"></i>
+        </div>
+      </div>
+      <!-- Search Section -->
+      <div class="search__section">
+        <form action="#">
+          <i class="fa-regular fa-magnifying-glass"></i>
+          <input type="text" class="search" placeholder="Search GitHub Name" />
+          <button class="search--button">Search</button>
+        </form>
+      </div>
+      <!-- User Details -->
+      <div class="details__section">
+        <!-- User info containing user's details and image -->
+        <div class="user__info--section">
+          <div class="user__image">
+            <img class="avatar" src="./Initial-image.jpg" alt="" />
+          </div>
+          <div class="user__details">
+            <p class="user--name">Darkviser</p>
+            <p class="user--tag">@Darkviser</p>
+            <p class="user--bio">I'm from planet 626</p>
+          </div>
+        </div>
+        <!-- User info containing user's repo information -->
+        <div class="profile__activities">
+          <div>
+            <h2>Repos</h2>
+            <span class="repo--count">9</span>
+          </div>
+          <div>
+            <h2>Followers</h2>
+            <span class="followers--count">900</span>
+          </div>
+          <div>
+            <h2>Following</h2>
+            <span class="following--count">29</span>
+          </div>
+        </div>
+        <!-- User info containing user's social media information  -->
+        <div class="profile__socials">
+          <div class="location">
+            <img src="./IMG/icon-location.svg" alt="" />
+            <p class="location--text">Mars</p>
+          </div>
+          <div class="twitter">
+            <img src="./IMG/icon-twitter.svg" alt="" />
+            <p class="twitter--handle">@Elon-musk</p>
+          </div>
+          <div class="portfolio">
+            <img src="./IMG/icon-website.svg" alt="" />
+            <p class="portfolio--text">My-webbie</p>
+          </div>
+          <div class="github">
+            <img src="./IMG/icon-company.svg" alt="" />
+            <p class="github--handle">Mars</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stamps">
+      <!-- this is where our stamps go -->
+    </div>
+  </body>
+</html>
+
+<!-- /* .profile__image--section {
+  flex: 1.2;
+  border: 2px solid red;
+}
+
+.profile__details--section {
+  flex: 3;
+}
+
+
+
+.profile__details--section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile__personals {
+  flex: 1.2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.user__bio--info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user--name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.user--tag {
+  color: var(--button-and-icon);
+  font-size: 1.2rem;
+  margin-top: -5px;
+}
+
+.user--bio {
+  color: var(--text--light);
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.date {
+  padding: 1rem 0;
+  color: var(--text--light);
+}
+
+.profile__activities {
+  flex: 0.8;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.profile__activities div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__activities div h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text--light);
+}
+
+.profile__activities div span {
+  font-size: 1.6rem;
+}
+
+.profile__socials {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile__socials div {
+  width: calc(50% - 5px);
+  height: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.profile__socials div:last-child {
+  flex-wrap: wrap;
+} */ -->
+
+<!-- // const repoResponse = await fetch(
+    //   `https://api.github.com/users/${username}/repos`
+    // );
+    // const repoData = await repoResponse.json();
+    // console.log(repoData); -->
