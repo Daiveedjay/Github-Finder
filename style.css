@@ -13,16 +13,18 @@
 }
 
 /* CSS Variables */
+
 :root {
   --font-family: "Space Mono", monospace;
   --primary-color: #141c2f;
   --secondary-color: #1f2a48;
   --button-and-icon: #0179fe;
   --text-primary: #fff;
-  --text--light: #999;
+  --text--light: #777;
 }
 
 html {
+  /* 10px per rem */
   font-size: 62.5%;
 }
 
@@ -31,10 +33,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* min-height: 100vh; */
   font-family: var(--font-family);
   background: var(--primary-color);
   color: var(--text-primary);
   position: relative;
+  overflow: hidden;
 }
 
 /* Main section styling */
@@ -235,13 +239,11 @@ body {
   font-weight: 700;
 }
 
-:root {
-  --font-family: "Space Mono", monospace;
-  --primary-color: #141c2f;
-  --secondary-color: #1f2a48;
-  --button-and-icon: #0179fe;
-  --text-primary: #fff;
-  --text--light: #777;
+.dark__mode {
+  --primary-color: #141c2f !important;
+  --secondary-color: #1f2a48 !important;
+  --text-primary: #fff !important;
+  transition: all ease-in-out 0.25s;
 }
 
 /* LIGHT MODE CLASSES */
@@ -272,7 +274,6 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  /* transform: translateX(-50%); */
   bottom: 0;
   width: 30px;
   height: 30px;
@@ -307,11 +308,48 @@ div.stamps {
   top: 0;
   left: 50%;
   width: 50%;
-  border: 2px solid red;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 div.stamps img {
   position: absolute;
   transform: translate(-50%, -50%);
-  animation: spin 30s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+/* @media screen { max-width: 
+  
+} */
+
+@media (max-width: 600px) {
+  html {
+    /* 8px per rem */
+    font-size: 50%;
+  }
+  .main__container {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  /* User socials styling */
+  .profile__socials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__socials div {
+    width: calc(100% - 5px);
+    height: calc(25% - 10px);
+    align-items: center;
+  }
 }
