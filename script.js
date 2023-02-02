@@ -80,7 +80,7 @@ const getUserAndRepoData = async function (username) {
     );
     // IF USER INPUTS WRONG OR INVALID STRING
     if (!userResponse.ok) {
-      throw new Error("You searched for a ghost. Try again");
+      throw new Error("You searched for a ghost 👻. Try again");
     }
 
     // CONVERTS FULFILLED PROOMISE TO JSON
